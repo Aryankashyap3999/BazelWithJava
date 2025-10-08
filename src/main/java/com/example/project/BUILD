@@ -1,12 +1,18 @@
+java_binary(
+    srcs = ["Hello.java"],
+    main_class = "main.java.com.example.project.Hello",
+    name = "hello_world",
+    runtime_deps = [
+        ":util_lib"
+    ],
+)
+
 java_library(
-    name = "project_lib",
-    srcs = glob(["*.java"]),
+    name = "util_lib",
+    srcs = glob(["utils/*.java"]),
     visibility = ["//visibility:public"],
 )
 
-java_binary(
-    name = "hello_world",
-    srcs = ["Hello.java"],
-    main_class = "main.java.com.example.project.Hello",
-    deps = [":project_lib"],
-)
+
+# bazel build //src/main/java/com/example/project:hello_world
+# bazel run //src/main/java/com/example/project:hello_world
