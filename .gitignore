@@ -1,0 +1,44 @@
+# -------------------------
+# Bazel build outputs
+# -------------------------
+bazel-*
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+bazel-firstJavaProjectWithBazel/
+
+# -------------------------
+# Java build artifacts
+# -------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# -------------------------
+# OS-specific files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# IDE / Editor settings
+# -------------------------
+# VS Code
+.vscode/
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# -------------------------
+# Backup / temporary files
+# -------------------------
+*.swp
+*~
