@@ -2,7 +2,7 @@ java_binary(
     srcs = ["Hello.java"],
     main_class = "main.java.com.example.project.Hello",
     name = "hello_world",
-    runtime_deps = [
+    deps = [
         ":util_lib"
     ],
 )
